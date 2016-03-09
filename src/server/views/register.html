@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class='container-fluid'>
+  <form formaction='/register' class='form-signin' method='post'>
+    <h2 class='form-signin-heading'>Please sign up!</h2>
+    <label for="email" class="sr-only">Email address</label>
+    <input type="email" name="email" class="form-control" placeholder="Email address" required="" autofocus="">
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" name="password" class="form-control" placeholder="Password" required="">
+    <input type="password" name="passwordConfirm" class="form-control" placeholder="Please confirm your password" />
+    <input class="btn btn-lg btn-primary btn-block" type="submit" value='Sign In' />
+  </form>
+</div>
+
+{% endblock %}
